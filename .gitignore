@@ -7,3 +7,6 @@ template/src/__tests__/__snapshots__/
 lerna-debug.log
 npm-debug.log
 /.changelog
+/.idea/
+/create-mobix-react-app.iml
+
