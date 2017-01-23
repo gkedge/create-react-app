@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "node packages/react-scripts/scripts/build.js",
+    "install-build": "npm install && packages/react-scripts/scripts/build.js",
     "changelog": "lerna-changelog",
     "create-react-app": "tasks/cra.sh",
     "e2e": "tasks/e2e-simple.sh",

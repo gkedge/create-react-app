@@ -230,6 +230,9 @@ function build(previousSizeMap) {
 function copyPublicFolder() {
   fs.copySync(paths.appPublic, paths.appBuild, {
     dereference: true,
-    filter: file => file !== paths.appHtml
+    filter:      file => {
+    return file !== paths.appHtml && !file.endsWith('index.html') &&
+           file !== !file.endsWith('deviceManagerJS.xhtml')
+    }
   });
 }

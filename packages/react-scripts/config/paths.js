@@ -42,10 +42,11 @@ var nodePaths = (process.env.NODE_PATH || '')
 
 // config after eject: we're in ./config/
 module.exports = {
-  appBuild: resolveApp('build'),
+  appBuild: resolveApp('build/secured'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('public/deviceManagerJS.xhtml'),
   appIndexJs: resolveApp('src/index.js'),
+  appBuildHtml: resolveApp('build/secured/deviceManagerJS.xhtml'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),
@@ -62,10 +63,11 @@ function resolveOwn(relativePath) {
 
 // config before eject: we're in ./node_modules/react-scripts/config/
 module.exports = {
-  appBuild: resolveApp('build'),
+  appBuild: resolveApp('build/secured'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('public/deviceManagerJS.xhtml'),
   appIndexJs: resolveApp('src/index.js'),
+  appBuildHtml: resolveApp('build/secured/deviceManagerJS.xhtml'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),
@@ -79,9 +81,9 @@ module.exports = {
 // config before publish: we're in ./packages/react-scripts/config/
 if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) {
   module.exports = {
-    appBuild: resolveOwn('../../../build'),
+    appBuild: resolveOwn('../../../build/secured'),
     appPublic: resolveOwn('../template/public'),
-    appHtml: resolveOwn('../template/public/index.html'),
+    appHtml: resolveOwn('../template/public/deviceManagerJS.xhtml'),
     appIndexJs: resolveOwn('../template/src/index.js'),
     appPackageJson: resolveOwn('../package.json'),
     appSrc: resolveOwn('../template/src'),
