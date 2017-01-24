@@ -1,8 +1,8 @@
 {
-  "name": "MobixJSUI",
-  "version": "0.8.5",
+  "name": "create-react-app",
+  "version": "0.1.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "gkedge/create-react-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
